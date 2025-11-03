@@ -1,0 +1,528 @@
+body {
+
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+header h2 {
+    font-family: cursive;
+}
+
+#wrapper {
+    margin-top: 10px;
+    width: 99%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header h1 {
+    text-align: left;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+header h2 {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    text-align: right;
+    font-size: 20px;
+    color: rgb(203, 170, 110);
+}
+
+
+
+header h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+    font-size: 20px;
+    color: rgb(202, 170, 109);
+}
+
+header img {
+    margin-top: 50px;
+    width: 100%;
+}
+
+nav {
+    margin-top: 50px;
+    line-height: 30px;
+    display: grid;
+    grid-template-columns: 60% 1fr;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav .menu1 a {
+    font-size: 20px;
+}
+
+.menuI {
+    text-align: right;
+
+}
+
+.menuI_active {
+    text-align: right;
+    color: rgb(202, 170, 109);
+
+}
+
+.menu1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hamburger-menu {
+    display: none;
+    /* Hidden by default, will be shown on mobile */
+    align-items: center;
+    justify-content: center;
+    ;
+}
+
+.hamburger-menu button {
+
+    background: none;
+    border: none;
+    font-size: 2em;
+    /* Size of the hamburger menu icon*/
+    color: gray;
+}
+
+.hamburger-menu button .fa-bars {
+    cursor: pointer;
+}
+
+.close-menu {
+    display: none;
+}
+
+
+.logo {
+    text-align: left;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    line-height: 0%;
+}
+
+.logo img {
+    width: 110px;
+    height: 50px;
+}
+
+nav a:hover {
+    color: rgb(203, 170, 110);
+}
+
+.menuI {
+    text-align: right;
+    font-size: 25px;
+}
+
+.menuI_active {
+    text-align: right;
+    color: gray;
+}
+
+section {
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+article {
+    font-size: 13px;
+}
+
+/* finding last child of each p and adding 80px to it */
+article p:last-child {
+    margin-bottom: 80px;
+}
+
+article h3 {
+    margin-bottom: 10px;
+    color: rgb(203, 170, 110);
+}
+
+footer {
+    margin-top: 20px;
+    min-height: 30px;
+    font-size: 10px;
+    font-weight: lighter;
+    text-align: right;
+    font-style: italic;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+/* within class therefore use . before typing the class name*/
+.books {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1px;
+    max-width: 100%;
+    margin-top: 50px;
+}
+
+.books figure {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin: 11px;
+}
+
+.books img {
+    width: 100%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.books>div {
+    text-align: center;
+    padding: 10px;
+}
+
+.books figure {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.storie-left {
+    grid-column: 1 / 7;
+}
+
+.storie-right {
+    grid-column: 7 / 13;
+}
+
+.storie-right p {
+    text-align: left;
+    font-size: 1.1em;
+}
+
+.storie-right h2 {
+    text-align: left;
+    font-size: 2em;
+}
+
+.hover-text {
+    opacity: 0;
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 8px;
+    border-radius: 10px;
+    color: white;
+    transition: opacity 0.7s ease;
+}
+
+.books figure:hover .hover-text {
+    display: block;
+    opacity: 1;
+}
+
+.books figure:hover img {
+    transform: scale (1.05);
+    opacity: 0.9;
+}
+
+.im:hover {
+    filter: blur(1.0px);
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+
+.im1 {
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+}
+
+.im2 {
+    grid-column: 4 / 7;
+    grid-row: 1 / 3;
+}
+
+.im3 {
+    grid-column: 7 / 13;
+    grid-row: 1 / 5;
+}
+
+.im4 {
+    grid-column: 1 / 4;
+    grid-row: 3 / 5;
+}
+
+.im5 {
+    grid-column: 4 / 7;
+    grid-row: 3 / 5;
+}
+
+.im6 {
+    grid-column: 1 / 7;
+    grid-row: 5 / 9;
+}
+
+.im7 {
+    grid-column: 7 / 10;
+    grid-row: 5 / 7;
+}
+
+.im8 {
+    grid-column: 10 / 13;
+    grid-row: 5 / 7;
+}
+
+.im9 {
+    grid-column: 7 / 10;
+    grid-row: 7 / 9;
+}
+
+.im10 {
+    grid-column: 10 / 13;
+    grid-row: 7 / 9;
+}
+
+.im11,
+.im13 {
+    grid-column: 1 / 4;
+    grid-row: 9 / 11;
+}
+
+.im12,
+.im14 {
+    grid-column: 4 / 7;
+    grid-row: 9 / 11;
+}
+
+.im13 {
+    grid-column: 7 / 10;
+}
+
+.im14 {
+    grid-column: 10 / 13;
+}
+
+/* configure all 3 at the same time */
+article figure figcaption {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+table img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.social {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.social .fa {
+    padding: 12px;
+    font-size: 3em;
+    color: gray;
+}
+
+.credit {
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+@media (max-width: 1024px) {
+
+    .hamburger-menu {
+        display: flex;
+        /* Ensure the hamburger menu is visible and aligned */
+        align-items: center;
+        /* Center the button vertically in the header*/
+    }
+
+    .menu1 {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        /* Ensure the menu is above other elements*/
+    }
+
+    .menu1 a {
+        padding: 20px;
+    }
+
+    .menu1 a,
+    .menu a:hover {
+        text-decoration: none;
+        /* Remove underline for normal and hover states */
+        color: gray;
+        /* Link color unchanged */
+        background-color: transparent;
+        /* No background change on hover*/
+    }
+
+    .close-menu {
+        display: block;
+        /*Ensure the button is visible */
+        position: absolute;
+        /* Absolute positioning to place the button precisely */
+        top: 20px;
+        /* Space from the top */
+        right: 20px;
+        /* Space from the right */
+        font-size: 2em;
+        /* Icon x size */
+        color: gray;
+        /* Icon color*/
+    }
+
+    /* Display the menu fullescreen on mobile */
+    .menu-deployed {
+        display: flex;
+        /* Use flexbook for layout*/
+        flex-direction: column;
+        /* Stack elements vertically */
+        justify-content: center;
+        /* Center elements vertically */
+        align-items: center;
+        /* Center elements horizontally*/
+        width: 100%;
+        /* Takes full width*/
+        height: 100vh;
+        /* Take full height of the viewport */
+        position: fixed;
+        /* Fixed position to cover the entire screen */
+        top: 0;
+        /* From the top of the page */
+        left: 0;
+        /* From the left side of the page */
+        background-color: white;
+        /* White background for the menu*/
+        z-index: 1000;
+        /* Ensure the menu is above all content*/
+        padding-top: 50px;
+        /* add some space at the top */
+    }
+
+    button {
+        border-width: 0px;
+        background-color: white;
+    }
+
+
+    nav {
+        margin: 0 auto;
+        margin-bottom: 50px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 25px 20px;
+        line-height: 30px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        border-bottom: 4px solid #000;
+        background: #000;
+        z-index: 1000;
+        color: white;
+
+    }
+
+    nav a {
+        color: white;
+    }
+
+    h1 {
+        margin-top: 50px;
+    }
+
+    #wrapper {
+
+        margin-top: 10px;
+        position: relative;
+        width: auto;
+        margin: 0 auto;
+        float: none;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo img {
+        height: 50px;
+        width: auto;
+    }
+
+    footer {
+        margin-top: 40px;
+        font-size: 12px;
+    }
+
+    .books {
+        grid-template-columns: auto auto;
+        /* Two columns for all images*/
+        gap: 23px;
+        /* Space between images */
+        padding: 0px;
+        /* Space around the grid */
+        grid-auto-rows: row dense;
+        width: 100%;
+    }
+
+    .books [class^="im"] {
+        grid-column: auto !important;
+        grid-row: auto !important;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .books figure {
+        margin: 0;
+    }
+
+    .store-left {
+        grid-column: 1 /3;
+    }
+
+    .storie-rigth {
+        grid-column: 1 /3;
+    }
+
+}
